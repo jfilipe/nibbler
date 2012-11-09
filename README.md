@@ -20,4 +20,4 @@ Update `nibbler/settings.py` with correct values for the following:
 $ python manage.py runserver
 ```
 
-Visit `http://127.0.0.1/admin/` and log in using the credentials you setup during `syncdb`.
+Visit `http://127.0.0.1:8000/admin/` and log in using the credentials you setup during `syncdb`.
