@@ -150,9 +150,15 @@ LOGGING = {
     }
 }
 
+STATICFILES_STORAGE = 'utils.NibblerStorage'
 DEFAULT_FILE_STORAGE = 'utils.NibblerStorage'
 
 # Update the following settings with correct values
 AWS_ACCESS_KEY_ID = ''
 AWS_SECRET_ACCESS_KEY = ''
 AWS_STORAGE_BUCKET_NAME = ''
+
+try:
+    from nibbler.local_settings import *
+except ImportError:
+    pass
