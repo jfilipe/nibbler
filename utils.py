@@ -20,6 +20,6 @@ class NibblerStorage(S3BotoStorage):
             access_key,
             secret_key,
             calling_format=OrdinaryCallingFormat(),
-            host=getattr(settings, 'AWS_S3_CUSTOM_HOST', 'beta.nibbler.io'),
-            port=getattr(settings, 'AWS_S3_CUSTOM_PORT', 8080)
+            host=getattr(settings, 'AWS_S3_CUSTOM_HOST', 'almond.nibbler.io'),
+            port=getattr(settings, 'AWS_S3_CUSTOM_PORT', 443)
         )
